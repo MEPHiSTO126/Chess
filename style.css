@@ -36,7 +36,7 @@ body {
     position: relative;
 }
 
-.light { background-color: #EBECD0; }
+.light { background-color: #E2DECB; }
 .dark  { background-color: #739552; }
 
 .board-wrapper {
@@ -75,12 +75,15 @@ body {
     height: 80%;
     object-fit: contain;
     cursor: grab;
-    transition: transform 0.2s ease;
+    transition: transform 0.2s ease, filter 0.2s ease;
     z-index: 10;
+    /* Adds a sleek shadow matching the shape of the piece */
+    filter: drop-shadow(0 6px 8px rgba(0, 0, 0, 0.6));
 }
 
 .piece:hover {
     transform: scale(1.1);
+    filter: drop-shadow(0 10px 12px rgba(0, 0, 0, 0.75));
 }
 
 /* Selected piece highlight */
