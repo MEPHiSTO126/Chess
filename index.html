@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chess</title>
+    <link rel="icon" type="image/png" href="assets/black-knight.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700;900&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script type="module" src="js/main.js"></script>
+</head>
+<body>
+
+    <!-- Full-screen splash overlay -->
+    <div id="ui-overlay">
+        <div id="splash-card">
+            <div id="crown-icon">♛</div>
+            <h1 id="splash-title">Chess</h1>
+            <p id="splash-tagline">by Chronos.</p>
+            <button id="start-btn">Start Game</button>
+        </div>
+    </div>
+
+    <div id="game-container">
+        <div class="board-wrapper">
+            <div id="chess-board"></div>
+        </div>
+    </div>
+
+    <!-- Pawn promotion modal (shown by JS when a pawn reaches the back rank) -->
+    <div id="promotion-modal" class="hidden">
+        <div>
+            <p>Choose your piece</p>
+            <div id="promotion-choices"></div>
+        </div>
+    </div>
+
+</body>
+</html>
